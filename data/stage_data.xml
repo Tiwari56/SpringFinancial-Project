@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="crm_case_stage_lead0" model="crm.lead.stage">
+        <field name="name">New</field>
+        <field name="sequence">5</field>
+        
+    </record>
+    
+    <record id="crm_case_stage_lead1" model="crm.lead.stage">
+        <field name="name">Under Review</field>
+        <field name="sequence">6</field>
+        
+    </record>
+    
+    <record id="crm_case_stage_lead2" model="crm.lead.stage">
+        <field name="name">Complete</field>
+        <field name="sequence">80</field>
+    </record>
+    
+    <!-- Add transitions between stages -->
+    <!-- <record id="crm_case_stage_lead_to_review" model="workflow.transition">
+        <field name="act_from" ref="crm.crm_case_stage_lead0"/>
+        <field name="act_to" ref="crm.crm_case_stage_lead1"/>
+        <field name="condition">True</field>
+    </record>
+    
+    <record id="crm_case_stage_review_to_complete" model="workflow.transition">
+        <field name="act_from" ref="crm.crm_case_stage_lead1"/>
+        <field name="act_to" ref="crm.crm_case_stage_lead2"/>
+        <field name="condition">True</field>
+    </record> -->
+</odoo>
